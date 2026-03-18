@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Village by CA Project</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="./styles.css">
     </head>
 
     <body>
@@ -23,7 +23,7 @@
             <img src="./images/HeroImage.png" alt="Village by CA" class="hero-image">
 
             <div class="hero-content">
-                <h1>Le Village by CA</h1>
+                <h1>Village by CA</h1>
                 <p class="tagline">An innovative platform to connect startups, mentors, and opportunities.</p>
                 <br>
                 <a href="https://github.com/Le-Meur-Mai/Village-by-CA-Laval" class="cta-button">
@@ -49,7 +49,7 @@
             <div class="feature-grid">
 
                 <div class="feature-card">
-                    <img src="feature1.jpg" alt="Feature 1">
+                    <img src="./images/IndexPage.png" alt="Index page of the Village by CA" onclick="openLightbox(this.src)">
                     <h3>A showcase for the association and its startups</h3>
                     <p>Offer an exclusive directory of startups selected and supported by the Village by CA in Laval.<br>
                         Highlight their innovative projects, areas of expertise, and ambitions.<br>
@@ -57,7 +57,7 @@
                 </div>
 
                 <div class="feature-card">
-                    <img src="feature2.jpg" alt="Feature 2">
+                    <img src="./images/FormulaireDeContact.png" alt="Contact Form" onclick="openLightbox(this.src)">
                     <h3>A platform facilitating communication</h3>
                     <p>Share the latest news from the Village and the Mayenne ecosystem.<br>
                         Interviews, feedback, trends and upcoming events.<br>
@@ -66,13 +66,37 @@
                 </div>
 
                 <div class="feature-card">
-                    <img src="feature3.jpg" alt="Feature 3">
+                    <img src="./images/EspaceAdministrateur.png" alt="Administrator Space" onclick="openLightbox(this.src)">
                     <h3>A customizable space for Village by CA and its members</h3>
                     <p>Each supported startup has a dedicated space on the platform: presentation page,
                         contact details, link to its website.
                         <br>The administrator also has their own space to customize all the information on the association's website,
                          so that your visitors are always kept up to date.
                     </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- MORE PICTURES SECTION -->
+        <section id="more-pictures" class="more-pictures">
+            <h2>More pictures</h2>
+
+            <div class="pictures-grid">
+
+                <div class="picture-card">
+                    <img src="./images/StartupsScreenShot.png" alt="Village by CA startups" onclick="openLightbox(this.src)">
+                </div>
+
+                <div class="picture-card">
+                    <img src="./images/LocationScreenShot.png" alt="Village by CA Locations" onclick="openLightbox(this.src)">
+                </div>
+
+                <div class="picture-card">
+                    <img src="./images/ProfilScreenShot.png" alt="Profile Space" onclick="openLightbox(this.src)">
+                </div>
+
+                <div class="picture-card">
+                    <img src="./images/indexQuotes.png" alt="Index quotes" onclick="openLightbox(this.src)">
                 </div>
 
             </div>
@@ -127,6 +151,10 @@
         <footer class="footer">
             © 2026 - Project Village by CA
         </footer>
+        <div id="lightbox" onclick="closeLightbox()">
+            <img id="lightbox-img" src="" alt="">
+        </div>
 
+        <script src="script.js"></script>
     </body>
 </html>
